@@ -3,6 +3,7 @@
 
 <form action="/score" method="POST">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <input type="text" name="query">
+  <%= hidden_field_tag :letters, @letters %>
+  <input type="text" name="word">
   <input type="submit" class="button">
 </form>
